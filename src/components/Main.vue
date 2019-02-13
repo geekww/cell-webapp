@@ -8,13 +8,13 @@
     </mu-appbar>
     <router-view></router-view>
     <mu-bottom-nav class="footer">
-      <router-link to='index'>
+      <router-link to='/index/index'>
         <mu-bottom-nav-item title="首页" icon="home" ></mu-bottom-nav-item>
       </router-link>
       <router-link to='favo'>
         <mu-bottom-nav-item title="我的收藏" icon="favorite"></mu-bottom-nav-item>
       </router-link>
-      <router-link to='center'>
+      <router-link to='/center/index'>
         <mu-bottom-nav-item title="个人中心" icon="verified_user"></mu-bottom-nav-item>
       </router-link>
     </mu-bottom-nav>
