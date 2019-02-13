@@ -17,7 +17,7 @@ export default new Router({
           path: '/index',
           name: '首页',
           component: index
-        }
+        },
       ]
     }
   ]

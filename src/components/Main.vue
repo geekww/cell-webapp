@@ -6,6 +6,7 @@
       </mu-button>
       丸子记忆大师
     </mu-appbar>
+    <router-view></router-view>
     <mu-bottom-nav class="footer">
       <router-link to='index'>
         <mu-bottom-nav-item title="首页" icon="home" ></mu-bottom-nav-item>
@@ -21,6 +22,7 @@
 </template>
 
 <script>
+
   import Header from './Header'
   import Footer from './Footer'
 
@@ -40,8 +42,6 @@
 <style scoped>
   .header{
     width: 100%;
-    position: fixed;
-    top: 0;
   }
   .footer{
     width: 100%;
