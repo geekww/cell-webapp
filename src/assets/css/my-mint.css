@@ -1,0 +1,16 @@
+/*自定义风格*/
+.mu-primary-text-color{
+  color: #009688;
+}
+.mu-bottom-item-active{
+  color: #009688;
+}
+.mu-input__focus{
+  color: #009688;
+}
+.mu-switch-checked{
+  color: #009688;
+}
+.mu-checkbox-checked{
+  color: #009688;
+}

@@ -1,21 +1,24 @@
 <template>
   <div class="muse-app">
-    <mu-appbar class="header" color="primary">
+    <mu-appbar class="header" color="teal">
       <mu-button icon slot="left">
         <mu-icon value="menu"></mu-icon>
       </mu-button>
-      丸子记忆大师
+      医贝单词
     </mu-appbar>
     <router-view></router-view>
     <mu-bottom-nav class="footer">
-      <router-link to='/index/index'>
-        <mu-bottom-nav-item title="首页" icon="home" ></mu-bottom-nav-item>
+      <router-link to='/message/index'>
+        <mu-bottom-nav-item title="消息" icon="question_answer"></mu-bottom-nav-item>
       </router-link>
-      <router-link to='favo'>
-        <mu-bottom-nav-item title="我的收藏" icon="favorite"></mu-bottom-nav-item>
+      <router-link to='/cell/index'>
+        <mu-bottom-nav-item title="背单词" icon="trending_up" ></mu-bottom-nav-item>
+      </router-link>
+      <router-link to='/discover/index'>
+        <mu-bottom-nav-item title="发现" icon="explore"></mu-bottom-nav-item>
       </router-link>
       <router-link to='/center/index'>
-        <mu-bottom-nav-item title="个人中心" icon="verified_user"></mu-bottom-nav-item>
+        <mu-bottom-nav-item title="我的" icon="face"></mu-bottom-nav-item>
       </router-link>
     </mu-bottom-nav>
   </div>
@@ -34,6 +37,12 @@
         msg: 'Welcome to Your Vue.js App'
       }
     },
+    mounted:function(){
+      this.$nextTick(function(){
+        // 初始化路由
+        // this.$router.push({path:'index')};
+      });
+    },
     methods:{
 
     }
@@ -50,6 +59,6 @@
   }
   .footer a{
     color: rgba(0,0,0,.54);
-    margin: 0 20px;
+    margin: 0 5px;
   }
 </style>

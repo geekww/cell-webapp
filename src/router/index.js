@@ -2,8 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
 
-import index from '../components/index/index.vue'
-import center from '../components/center/center.vue'
+import message from '../components/message/index.vue'
+import cell from '../components/cell/index.vue'
+import discover from '../components/discover/index.vue'
+import center from '../components/center/index.vue'
 
 Vue.use(Router)
 
@@ -15,9 +17,19 @@ export default new Router({
       component: Main,
       children: [
         {
-          path: '/index/index',
-          name: '首页',
-          component: index
+          path: '/message/index',
+          name: '消息',
+          component: message
+        },
+        {
+          path: '/cell/index',
+          name: '背单词',
+          component: cell
+        },
+        {
+          path: '/discover/index',
+          name: '发现',
+          component: discover
         },
         {
           path: '/center/index',

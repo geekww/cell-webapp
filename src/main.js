@@ -6,9 +6,14 @@ import router from './router'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 
+import 'muse-ui-message/dist/muse-ui-message.css'
+import Message from 'muse-ui-message'
+
 import 'lib-flexible/flexible.js'
+import './assets/css/my-mint.css'
 
 Vue.use(MuseUI)
+Vue.use(Message)
 
 Vue.config.productionTip = false
 
